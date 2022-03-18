@@ -3,9 +3,12 @@
     text-align: center;
 }
 
+.justify {
+    text-align: justify;
+}
+
 .container{
     display: flex;
-    flex-flow: row;
     justify-content: center;
     align-items: center;
 }
@@ -19,7 +22,7 @@
 #menu li a{
     text-decoration: none;
     color:black;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #menu li a:hover {
@@ -31,11 +34,28 @@
 }
 
 .br-50{
-    border-radius: 70%;
+    border-radius: 50%;
 }
 
-.wh{
-    width: 5px;
-    height: 5px;
+.wh-300{
+    width: 120px;
+    height: 150px;
+}
+
+.tm-social{
+    width: 50px;
+    height: 50px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.ml-50{
+    margin-left: 50px;
+}
+
+.sobre{
+    display: flex;
 }
     /* estilos da pagina contato.html*/
