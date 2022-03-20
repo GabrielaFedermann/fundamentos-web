@@ -58,4 +58,10 @@
 .sobre{
     display: flex;
 }
+
+ 
     /* estilos da pagina contato.html*/
+
+.mb-50{
+    margin-left: 50px ;
+}

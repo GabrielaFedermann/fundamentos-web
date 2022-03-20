@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,51 +8,81 @@
     <title>Contato</title>
     <link rel="stylesheet" href="assets/img/style.css">
 </head>
+
 <body>
     <ul id="menu">
         <li>
-            <a href = "index.html" >Home</a>
+            <a href="index.html">Home</a>
 
         </li>
-        
-        <li><a href = "contato.html" >Contato</a>
+
+        <li><a href="contato.html">Contato</a>
         </li>
     </ul>
 
     <h1 class="center">Entre em contato comigo </h1>
 
-    <div class="container">
-        <h2>Mande uma mensagem:</h2>
+    <div class="container m-50">
+        <div>
         <form>
             <label for="Nome">Nome</label>
-            <input type="text" id="Nome">
+            <input type="text" id="Nome" onkeyup= "validaNome()" >
+            <div id="txtNome"></div>
             <br>
-    
+            <br>
+
             <label for="Email">Email</label>
-            <input type="text" id="email">
+            <input type="text" id="email" onkeyup= "validaEmail()" >
+            <div id="txtEmail"></div>
             <br>
-    
+            <br>
+
             <label for="Assunto">Assunto:</label>
-            <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+            <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup= "validaAssunto()"></textarea>
+            <div id="txtAssunto"></div>
             <br>
             <br>
             <button>Enviar</button>
-        
+
         </form>
-
     </div>
-<div>
-    <h2>Endereço:</h2>
-    <p> Rio Amazonas</p>
 
-    <iframe 
-    src="https://www.google.com/maps/embed?pb=!4v1647456019374!6m8!1m7!1s-HJbDxhlTSxqeSSIBrlQwg!2m2!1d-2.947926514809056!2d-60.63131641013248!3f280.36488724838813!4f-4.894987440254795!5f0.7820865974627469" 
-    width="300" 
-    height="125" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy"></iframe>
-</div>
-    
+    <div class= "ml-50">
+        <p> Rio Amazonas</p>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1647456019374!6m8!1m7!1s-HJbDxhlTSxqeSSIBrlQwg!2m2!1d-2.947926514809056!2d-60.63131641013248!3f280.36488724838813!4f-4.894987440254795!5f0.7820865974627469"
+            width="600" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" onmousemove="mapaZoom()" onmouseout="mapaNormal()"  id ="mapa"> 
+        <br>
+        </iframe>
+    </div>
+ 
+
+
+    <footer>
+        <div class="container mb-50">
+            <a href="https://www.instagram.com/gabyfgf" target="_blank"><img class="tm-social"
+                    src="assets/img/instagram.png" alt="Instagram"></a>
+
+
+            <a href="https://github.com/GabrielaFedermann" target="_blank"> <img class="tm-social"
+                    src="assets/img/github.png" alt="GitHub"></a>
+
+
+            <a href="https://www.linkedin.com/in/gabriela-federmann-566691a6/?msgOverlay=true" target="_blank">
+                <img class="tm-social" src="assets/img/linkedin.png" alt="Linkedin"></a>
+
+
+        </div>
+        <p class="center">
+            Todos os direitos (lagrimas tambem) reservados a Gabs &copy;
+        </p>>
+
+
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
 </body>
+
 </html>
